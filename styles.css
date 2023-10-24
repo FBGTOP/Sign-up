@@ -9,23 +9,22 @@ body{
     height:100vh;
     font-size: 20px;
     background-color: black;
+    align-items: center;
 }
 
 .main{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 90%;
-    height:100%;
+    width: 100%;
+    height: 100vh;
 }
 
 .mainImg{
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
 img{
-    height: 100vh;
+    height: 100%;
 }
 
 .mainTitle{
@@ -34,20 +33,19 @@ img{
     top: 25%;
     width: 100%;
     height: 110px;
-    font-size: 3rem;
     background-color: rgba(41,41,41,0.6);
     line-height: 110px;
     text-align: center;
 }
 
 .mainForm{
-    width: 50%;
+    width: 100%;
     height: 100%;
     background-color: aliceblue;
 }
 
 .formHead{
-    height: 40%;
+    height: 30%;
     background-color: aliceblue;
     color: black;
     padding: 20px;
@@ -61,28 +59,40 @@ img{
 }
 
 .formBase{
-    height: 35%;
+    height: 28%;
     background-color: aliceblue;
     padding: 20px;
+}
+
+.formMain{
+    height: 30%;
+    background-color: white; 
+    box-shadow: grey 10px;
 }
 
 form{
     height: 25%;
     background-color: white;
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%
 }
 
 .fields{
     display: flex;
     justify-content: space-evenly;
     align-content: end;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 
 }
 
 input, label{
     background-color: white;
     color: black;
-    width: 40%;
+    width: 95%;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -100,9 +110,19 @@ button{
 label{
     font-size: 1rem;
     color: rgb(78, 76, 76);
+    display: flex;
+    align-items: flex-end;
 }
 
 input{
     border: #E5E7EB solid;
     border-radius: 10px;
+}
+
+input:hover{
+    border: rgb(19, 93, 189) solid;
+}
+
+input:required{
+    border: rgb(189, 34, 34) solid;
 }
